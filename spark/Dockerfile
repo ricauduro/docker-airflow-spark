@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     procps \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+ENV key = ""
     
 # Download and install Spark
 ENV SPARK_VERSION=3.5.1
